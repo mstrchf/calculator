@@ -97,9 +97,9 @@ function operate(ops, num1, num2) {
       return add(parseInt(num1), parseInt(num2));
     case "-":
       return subtract(parseInt(num1), parseInt(num2));
-    case "*":
+    case "×":
       return multiply(parseInt(num1), parseInt(num2));
-    case "/":
+    case "÷":
       return divide(parseInt(num1), parseInt(num2));
     default:
       return;
@@ -123,10 +123,9 @@ function divide(firstNum, secondNum) {
 }
 
 async function reset() {
-
     firstNumber = "";
     secondNumber = "";
-    displayValue = "0";
+    displayValue = "";
     operator = "";
     display.value = displayValue;
 }

@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #020202;
 }
 
 main {
@@ -24,6 +24,9 @@ main {
   flex-direction: column;
   margin: 2em;
   flex: 1;
+  border: 1px solid #B3BFB8;
+  padding: 1em;
+  border-radius: 25px;
 }
 
 input {
@@ -33,12 +36,16 @@ input {
   margin-bottom: 0.5em;
   outline: none;
   border: none;
-  color: #2b2a20;
+  color: #0B3142;
   text-align: end;
 
+
+
   border-radius: 20px;
-  background: linear-gradient(45deg, #c9dfa2, #c0df89);
-  box-shadow: inset 5px 0px 10px #677354, inset -5px -5px 10px #e5ffce;
+  /* background: linear-gradient(45deg, #22181C, #0F5257); */
+  background: #A2E3C4;
+
+  /* box-shadow: inset 2px 2px 5px #677354, inset 0px 0px 5px #e5ffce; */
 }
 
 .calculator-buttons {
@@ -50,24 +57,31 @@ input {
 button {
   font-size: 2em;
   padding: 0.5em 0.75em;
-  background-color: wheat;
-  border-radius: 5px;
   outline: none;
   border: none;
-  box-shadow: 0 0 5px 1px wheat;
-  color: #2b2a20;
-  font-weight: bold;
-
+  color: #fff;
   border-radius: 20px;
-  background: linear-gradient(45deg, #c9dfa2, #c0df89);
-  box-shadow: inset 2px 2px 5px #677354, inset -5px -5px 5px #e5ffce;
+  background: #0F5257;
 }
 
 button:active {
   opacity: 0.5;
 }
+button.operator {
+  background: #22181C;
+  background: #3C493F;
+  background: #A2E3C4;
+  color: #0B3142;
 
+}
 button.equal,
 button.clear {
   grid-column: span 2;
+  background: #0B3142;
+}
+
+button.del {
+  background: #F13030;
+  /* box-shadow: inset 2px 2px 5px #df4119, inset 0px 0px 5px #e5ffce; */
+
 }
